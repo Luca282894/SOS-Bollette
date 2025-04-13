@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOS Bollette</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0056b3;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #004494;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOS Bollette</h1>
+    <p>Tutti i servizi di cui hai bisogno, in un solo posto</p>
+  </header>
+
+  <nav>
+    <a href="#servizi">Servizi</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <section id="servizi">
+    <h2>Servizi Offerti</h2>
+    <div class="services">
+      <div class="service-box">💡 Consulenza bollette luce, gas e internet</div>
+      <div class="service-box">📞 Attivazioni utenze</div>
+      <div class="service-box">💳 Pagamento bollettini</div>
+      <div class="service-box">📱 Ricariche telefoniche e Postepay</div>
+      <div class="service-box">🆔 Creazione SPID</div>
+      <div class="service-box">📧 Creazione PEC</div>
+      <div class="service-box">📦 Spedizione pacchi</div>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:sosbollettemolfetta@gmail.com">sosbollettemolfetta@gmail.com</a></p>
+    <p>Indirizzo: Corso Margherita 46, Molfetta</p>
+
+    <h3>Scrivici un messaggio</h3>
+    <form>
+      <input type="text" placeholder="Il tuo nome" required>
+      <input type="email" placeholder="La tua email" required>
+      <textarea rows="4" placeholder="Il tuo messaggio" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+
+    <h3>Dove siamo</h3>
+    <iframe src="https://www.google.com/maps?q=Corso+Margherita+46,+Molfetta&output=embed" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SOS Bollette - Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
